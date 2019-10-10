@@ -1,0 +1,8 @@
+    body {
+      background-color: #fff;
+      color: #C0392B;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
