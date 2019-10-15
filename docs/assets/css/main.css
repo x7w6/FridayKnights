@@ -1,0 +1,40 @@
+/*fonts*/
+@font-face {
+  font-family: NightMachine;
+  src: url('../fonts/NightMachine.otf') format("opentype");
+}
+
+/*global*/
+h1 {
+  font-family: NightMachine !important;
+}
+
+/*Nav*/
+.navbar-nav, li {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*Hero Section*/
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-title {
+  font-size: 5em;
+}
+.btn-outline-dark {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
+  font-size: 0.8em;
+  border: 2.7px solid #343a40 !important;
+  padding: .375rem .75rem !important;
+  border-radius: .3rem;
+}
+.btn li {
+  margin-left: 5px;
+  font-size: 1.5em;
+}
