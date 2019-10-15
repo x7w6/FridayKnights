@@ -8,6 +8,37 @@
 h1 {
   font-family: NightMachine !important;
 }
+.bg-highlight {
+  background-color: #d03c3c;
+}
+.primary {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+ .navbar-nav .active a::after {
+   content: ' ';
+   position: relative;
+   left: 0;
+   display: inline-block;
+   height: 5px;
+   width: 100%;
+   background: #d03c3c;
+   top: -1.125em;
+   z-index: -1;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes move {
+  0%   {top: 0px;}
+  100% {top: 2px;}
+}
+/* Standard syntax */
+@keyframes move {
+  0%   {top: 0px;}
+  100% {top: 2px;}
+}
 
 /*Nav*/
 .navbar-nav, li {
@@ -24,6 +55,16 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.background-flame {
+  background-image: url(../img/flames.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
 }
 .hero-title {
   font-size: 5em;
@@ -35,8 +76,21 @@ h1 {
   border: 2.7px solid #343a40 !important;
   padding: .375rem .75rem !important;
   border-radius: .3rem;
+  width: 140px;
+  text-align: center;
 }
-.btn li {
-  margin-left: 5px;
-  font-size: 1.5em;
+ .fa-chevron-down {
+  font-size: 2em;
+  margin-bottom: 10px;
+  position: relative;
+  -webkit-animation: move 1s infinite;
+  animation: move 1s infinite;
+}
+
+/*Get in Touch*/
+
+.getintouch h2 {
+  color: white;
+  text-decoration: none;
+  text-transform: none !important;
 }
