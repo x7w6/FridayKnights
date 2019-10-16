@@ -10,13 +10,32 @@ h1 {
 }
 .bg-highlight {
   background-color: #d03c3c;
+
+}
+.section-fix {
+  margin-top: -13em;
+}
+.fp-tooltip {
+  color: black !important;
+}
+.nav-logo {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+.fp-slidesNav {
+  text-align: center !important;
+}
+.slimScrollBar {
+  background: red !important;
+  opacity: 1 !important;
+  z-index: 999 !important;
 }
 .primary {
   font-family: 'Raleway', sans-serif;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
-
 }
  .navbar-nav .active a::after {
    content: ' ';
@@ -48,15 +67,16 @@ h1 {
   text-transform: uppercase;
   margin-left: 5px;
 }
-
-/*Hero Section*/
-.hero {
+/*
+Hero Section
+ .hero {
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-}
+}                  */
+
 .background-flame {
   background-image: url(../img/flames.png);
   background-repeat: no-repeat;
@@ -88,9 +108,16 @@ h1 {
 }
 
 /*Get in Touch*/
-
 .getintouch h2 {
   color: white;
   text-decoration: none;
   text-transform: none !important;
+}
+
+/*Episodes*/
+.slide {
+  text-align: center;
+}
+.episodes {
+
 }

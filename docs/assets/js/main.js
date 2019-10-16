@@ -1,10 +1,13 @@
 new fullpage('#fullpage', {
-  v2compatible: true,
   autoScrolling: true,
-  navigation: true,
-  navigationPosition: 'bottom',
   loopBottom: true,
+  navigation: true,
+  navigationTooltips:  ['Home', 'Connect', 'Episodes', 'Store', 'Blog' ],
+  showActiveTooltip: true,
+  scrollHorizontally: true,
   menu: '#menu',
   anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage'],
-  controlArrows: true
+  controlArrows: true,
+  slidesNavigation: true,
+  scrollOverflow: true,
 })
