@@ -1,0 +1,29 @@
+{
+  "name": "fridayknights",
+  "version": "1.0.0",
+  "description": "> This repository will house the codebase for Friday Knights Podcast website. > The goal is to utilize newer languages to build and maintain the site.",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "eslint": "^6.6.0",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zacharyweaver/FridayKnights.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zacharyweaver/FridayKnights/issues"
+  },
+  "homepage": "https://github.com/zacharyweaver/FridayKnights#readme"
+}
