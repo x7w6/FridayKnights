@@ -3,10 +3,10 @@
 > This repository will house the codebase for Friday Knights Podcast website.
 > The goal is to utilize newer languages to build and maintain the site.
 
-## Features
-
+## Features / Sprints
+1. User Interface: clean and fun
 1. Embed Player from Libsyn
-1. Provide links to Feed
+1. Provided Social links:
    - iTunes
    - Google Podcast
    - General Libsyn
@@ -19,17 +19,9 @@
    - Discord
    - Email  (form)
 1. Reviews / Feedback
-   - Pull from iTunes
-   - Offer option for posting?
-
-## Tasks
-
-- Determine Layout
-- Confirm language
-- Confirm sections
-- Determine colour scheme
-- Determine font base
-
+   - iTunes API 
+   - On site feedpack section ?
+1. App Security 
 ## Preview of Features
 
 [Sample Site][1]
