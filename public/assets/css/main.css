@@ -53,16 +53,6 @@ h1 {
   position: relative;
 }
 
-.background-flame {
-  background-image: url(../img/flames.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-}
-
 .hero-title {
   font-size: 5em;
 }
@@ -102,8 +92,9 @@ h1 {
   color: white;
 }
 
-.connect h2, .connect a {
-  color: black;
+.connect a {
+  margin-left: 2em;
+  color: #6f1f1f;
 }
 
 /*Episodes*/
@@ -123,9 +114,3 @@ footer {
     height: 20vh;
     margin: 0 auto;
 }
-
- .footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
- }

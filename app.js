@@ -1,7 +1,14 @@
 const express = require('express');
 const app = express();
-const port = 3000;
-const nodemon = require('nodemon');
+const home = require('./routes/home');
+const dotenv = require('dotenv');
 
-app.get('./docs/index.html');
-app.listen(port, () => console.log(`Example app listening on port {$port} !`));
+
+app.use(express.static('public'));
+
+app.use('/', home);
+
+// set environment variables PORT
+const port = process.env.PORT || 3000;
+//dynamically set port with variable
+app.listen(port, () => console.log(`Listening on Port ${port}...`));
