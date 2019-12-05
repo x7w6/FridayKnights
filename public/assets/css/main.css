@@ -9,6 +9,12 @@ h1 {
   font-family: NightMachine !important;
 }
 
+.title {
+  font-family: 'Gill Sans';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .bg-highlight {
   background-color: #d03c3c;
 }
