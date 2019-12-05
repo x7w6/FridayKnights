@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="#home">
@@ -47,6 +48,7 @@
     </div>
   </nav>
   <!--End of Nav-->
+
   <!-- Hero -->
   <div class="hero" id="home">
     <div class="container">
@@ -64,54 +66,57 @@
       </div>
     </div>
   </div>
+  <!--End of Hero-->
 
+  <!--About us-->
   <section class="mb-5" id="about">
     <div class="container">
-      <div class="about mx-auto mb-5 row">
-        <h1 class="text-center col-6">About Us</h1>
-        <h5 class="w-75 m-auto col-6">Friday Knights is a weekly fifth edition Dungeons and Dragons real play adventure.
+      <div class="about mx-auto mb-5">
+        <h1 class="text-center">About Us</h1>
+        <h5 class="w-75 m-auto">Friday Knights is a weekly fifth edition Dungeons and Dragons real play adventure.
           The current story is based on the Curse of Strahd module.
           New episodes release every Monday so make sure to subscribe in your favorite podcast application</h5>
       </div>
 
       <!-- Grid row -->
-      <div class="row mb-5 align-items-center align-self-center mx-auto">
+      <div class="row mb-5 mt-5 text-center">
 
-        <!-- Grid column -->
-        <div class="col-md-4 row">
-          <div class="avatar col-12">
-            <img width="100% col-12"
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top w-50 mx-auto"
               src="https://vignette.wikia.nocookie.net/forgottenrealms/images/b/b6/Orderofthegauntlet.png/revision/latest?cb=20170108165412">
+            <div class="card-body">
+              <h4 class="font-weight-bold dark-grey-text card-title">AZRAEL JASNY-WILK</h4>
+              <h6 class="card-text grey-text mb-3 col-12">A young aasimar, unaware of his true heritage, born and
+                raised in the Order of the Gauntlet.</h6>
+            </div>
           </div>
-          <h4 class="font-weight-bold dark-grey-text col-12">AZRAEL JASNY-WILK</h4>
-          <h6 class="text-uppercase grey-text mb-3 col-12">A young aasimar, unaware of his true heritage, born and
-            raised in the Order of the Gauntlet.</h6>
         </div>
-        <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-md-4 row">
-          <div class="avatar col-12">
-            <img width="100%" src="https://i.imgur.com/xD8YMsl.png">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top w-50 mx-auto" src="https://i.imgur.com/xD8YMsl.png">
+            <div class="card-body">
+              <h4 class="font-weight-bold dark-grey-text card-title">EZIEKIEL “SUEE” MCGUFF</h4>
+              <h6 class="card-text grey-text mb-3 col-12">An energetic wood elf druid that was recruited by the Emerald
+                Enclave. He has been raising pigs for the last hundred years of his life.</h6>
+            </div>
           </div>
-          <h4 class="font-weight-bold dark-grey-text col-12">EZIEKIEL “SUEE” MCGUFF</h4>
-          <h6 class="text-uppercase grey-text mb-3 col-12">An energetic wood elf druid that was recruited by the Emerald
-            Enclave. He has been raising pigs for the last hundred years of his life.</h6>
         </div>
-        <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-md-4 row">
-          <div class="avatar col-12">
-            <img width="100%" src="https://www.worldanvil.com/uploads/images/f543fe3365fa9523f059a91457d49d8c.png">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top w-50 mx-auto"
+              src="https://www.worldanvil.com/uploads/images/f543fe3365fa9523f059a91457d49d8c.png">
+            <div class="card-body">
+              <h4 class="font-weight-bold dark-grey-text card-title">ZION EVERKNIGHT</h4>
+              <h6 class="card-text grey-text mb-3 col-12">A middle aged man with no memory of his past. He enjoys walks
+                in the dark and shooting his gun</h6>
+            </div>
           </div>
-          <h4 class="font-weight-bold dark-grey-text col-12">ZION EVERKNIGHT</h4>
-          <h6 class="text-uppercase grey-text mb-3 col-12">A middle aged man with no memory of his past. He enjoys walks
-            in the dark and shooting his gun.</h6>
         </div>
-        <!-- Grid column -->
 
-      <!-- Grid row -->
+      </div>
     </div>
   </section>
   <!--Stay Connected-->
@@ -120,10 +125,14 @@
       <div class="container">
         <h1 class="text-center">Get in Touch</h1>
         <div class="form-container">
-          <form method="POST">
+          <form method="POST" action="mail.php" id="contact-form">
             <div class="form-group text-left">
-              <label for="message" class="small text-muted">Enter your E-mail</label>
-              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
+              <label class="small text-muted" for="name">Enter your name</label>
+              <input type="text" class="form-control" id="name" placeholder="John Doe">
+            </div>
+            <div class="form-group text-left">
+              <label for="email" class="small text-muted">Enter your E-mail</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
                 placeholder="name@domain.com">
               <small id="emailHelp" class="small text-danger">We'll never share your email with anyone else.</small>
             </div>
@@ -131,7 +140,8 @@
               <label for="message" class="small text-muted">Enter your message</label>
               <textarea type="text" class="form-control" id="message" placeholder="Message" row="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-dark">Submit</button>
+            <a class="btn btn-dark text-white" onclick="validateForm()">Submit</a>
+            <div class="status text-left" id="status"></div>
           </form>
         </div>
       </div>
