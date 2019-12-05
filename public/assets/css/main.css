@@ -23,6 +23,10 @@ h1 {
   color: #6f1f1f;
 }
 
+.highlight-2 {
+  color: #d03c3c;
+}
+
 .primary {
   font-family: 'Raleway', sans-serif;
   color: white;
@@ -56,7 +60,6 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .hero-title {
@@ -93,30 +96,35 @@ h1 {
   }
 }
 
-/*Get in Touch / Contact */
-.patreon  {
-  color: white;
-}
-
 .connect a {
-  margin-left: 2em;
+  margin-left: 1em;
   color: #6f1f1f;
+  font-size: 1.5em;
 }
 
-/*Episodes*/
-.episodes {
-  height: 40vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.podcast-link {
+  margin: 6em 0;
 }
 
-.episode {
-  text-align: center;
+.form-container {
+  max-width: 700px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+form {
+  margin: auto;
+  width: 100%;
+}
+
+form button {
+  width: 100%;
 }
 
 /*Footer*/
 footer {
     height: 20vh;
     margin: 0 auto;
+    color: #6f1f1f;
+    font-weight: 600;
 }
