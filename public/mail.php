@@ -74,12 +74,19 @@
             echo "Message cannot be empty.";
             die();
             }
+
             $content="From: $name \nEmail: $email \nMessage: $message";
-            $recipient = "zaclweaver@gmail.com";
-            $mailheader = "From: $email \r\n";
-            mail($recipient, $content, $mailheader) or die("Error!");
+            $to = "zaclweaver@gmail.com, ";
+            $to .= "mailbag@fridayknights.fun";
+            $subject = "Friday Knight's Form Inquiry";
+            $headers = 'From: '.$email."\r\n" . 
+                        'Reply-To: ' .$email."\r\n" . 
+                        'X-Mailer: PHP/' . phpversion();
+
+            mail($to, $subject, $content, $headers, "From: " . $name);
             echo "email on its way, we will get back to you shortly";
-            ?>
+
+          ?>
         </div>
         <a href="index.html" class="btn btn-success">Go Back</a>
       </div>

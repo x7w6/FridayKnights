@@ -4,6 +4,10 @@
   src: url('../fonts/NightMachine.otf') format("opentype");
 }
 
+a {
+  cursor: pointer;
+}
+
 /*global*/
 h1 {
   font-family: NightMachine !important;

@@ -128,17 +128,17 @@
           <form method="POST" action="mail.php" id="contact-form">
             <div class="form-group text-left">
               <label class="small text-muted" for="name">Enter your name</label>
-              <input type="text" class="form-control" id="name" placeholder="John Doe">
+              <input type="text" name="name" class="form-control" id="name" placeholder="John Doe">
             </div>
             <div class="form-group text-left">
               <label for="email" class="small text-muted">Enter your E-mail</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+              <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp"
                 placeholder="name@domain.com">
               <small id="emailHelp" class="small text-danger">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group text-left">
               <label for="message" class="small text-muted">Enter your message</label>
-              <textarea type="text" class="form-control" id="message" placeholder="Message" row="3"></textarea>
+              <textarea type="text" class="form-control" name="message" id="message" placeholder="Message" row="3"></textarea>
             </div>
             <a class="btn btn-dark text-white" onclick="validateForm()">Submit</a>
             <div class="status text-left" id="status"></div>
@@ -162,7 +162,7 @@
               class="fab fa-google-play"></i></a>
         </div>
         <div class="d-flex justify-content-end">
-          <p>Copright &copy; Friday Knights 2019.</p>
+          <p>Copyright &copy; Friday Knights 2019.</p>
         </div>
       </div>
     </div>
