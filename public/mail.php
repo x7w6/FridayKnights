@@ -76,8 +76,7 @@
             }
 
             $content="From: $name \nEmail: $email \nMessage: $message";
-            $to = "zaclweaver@gmail.com, ";
-            $to .= "mailbag@fridayknights.fun";
+            $to = "james.daniel.development@gmail.com";
             $subject = "Friday Knight's Form Inquiry";
             $headers = 'From: '.$email."\r\n" . 
                         'Reply-To: ' .$email."\r\n" . 
