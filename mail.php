@@ -76,13 +76,11 @@
             }
 
             $content="From: $name \nEmail: $email \nMessage: $message";
-            $to = "james.daniel.development@gmail.com";
+            $to = "james.daniel.development@gmail.com, zaclweaver@gmail.com";
             $subject = "Friday Knight's Form Inquiry";
-            $headers = 'From: '.$email."\r\n" . 
-                        'Reply-To: ' .$email."\r\n" . 
-                        'X-Mailer: PHP/' . phpversion();
+            $headers = "From: " . $email . "\r\n" . "Content-type: text/html;charset=UTF-8" . "\r\n";
 
-            mail($to, $subject, $content, $headers, "From: " . $name);
+            mail($to, $subject, $content, $headers);
             echo "email on its way, we will get back to you shortly";
 
           ?>
